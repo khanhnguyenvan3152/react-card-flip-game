@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-card-flip-game/static/css/main.a7ecf3c8.css",
+    "main.js": "/react-card-flip-game/static/js/main.5eba5496.js",
+    "static/js/787.778bbd7f.chunk.js": "/react-card-flip-game/static/js/787.778bbd7f.chunk.js",
+    "static/media/close-button-svgrepo-com.svg": "/react-card-flip-game/static/media/close-button-svgrepo-com.9f6920d274e833b558c41173a2f1e89a.svg",
+    "index.html": "/react-card-flip-game/index.html",
+    "main.a7ecf3c8.css.map": "/react-card-flip-game/static/css/main.a7ecf3c8.css.map",
+    "main.5eba5496.js.map": "/react-card-flip-game/static/js/main.5eba5496.js.map",
+    "787.778bbd7f.chunk.js.map": "/react-card-flip-game/static/js/787.778bbd7f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a7ecf3c8.css",
+    "static/js/main.5eba5496.js"
+  ]
+}
