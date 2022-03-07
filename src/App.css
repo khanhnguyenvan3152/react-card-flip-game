@@ -1,5 +1,11 @@
 .App {
+  height: 100vh;
+  width: 100vw;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
 }
 
 .App-logo {
@@ -35,4 +41,110 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.board{
+  width: 50%;
+  perspective: 1000px;
+  display: grid;
+  margin:auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;  
+  justify-content: center;
+}
+
+.card{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  transform-origin: right;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 12px;
+}
+
+.card_face{
+  position: absolute;
+  border-radius: 1px solid red;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card_face--front{
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_face--back{
+  background-color:blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+}
+
+.card.flipped{
+  transform:  translateX(-100%) rotateY(180deg);
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+.modal-wrapper{
+  position: fixed;
+  top:0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  padding:0 50px;
+}
+
+.modal{
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 5%;
+  width: 400px;
+  height: 500px;
+  display: grid;
+  grid-template-rows: 0.25fr 3fr 1fr;
+}
+
+.modal_top{
+  position: relative;
+  text-align: left;
+  padding: 0.25em;
+  display: flex;
+  align-items: center;
+}
+
+.modal_top button{
+  border:none;
+  background: none;
+  position: absolute;
+  right: 1rem;
+}
+.modal_body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.modal_footer button{
+  background-color: #1C5D99;
+  width: 100px;
+  border: none;
+  margin:10px;
+  border-radius: 0.25em;
+  color: white;
+  padding: 10px 15px
 }
